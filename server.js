@@ -10,5 +10,5 @@ app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname + '/dist/top-ten-online-casinos/index.html'));
 });
 
-server.app.listen(port, () => {
+app.listen(port, () => {
 });
