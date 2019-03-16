@@ -1,9 +1,8 @@
 const express = require('express');
 const app = express();
+const port = process.env.PORT || 5000;
 
 app.use(express.static(__dirname + '/dist/top-ten-online-casinos'));
-
-app.listen(process.env.Port || 8080);
 
 //path location strategy
 
@@ -11,4 +10,5 @@ app.get('/*', function (req, res) {
     res.sendFile(path.join(__dirname + '/dist/top-ten-online-casinos/index.html'));
 });
 
-console.log('Console listing!');
+server.app.listen(port, () => {
+});
