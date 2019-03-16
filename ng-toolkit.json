@@ -1,0 +1,8 @@
+{
+  "universal": {
+    "project": "top-ten-online-casinos",
+    "skipInstall": false,
+    "directory": ".",
+    "http": true
+  }
+}
