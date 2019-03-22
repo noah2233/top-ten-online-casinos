@@ -12,14 +12,14 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent
   ],
-  imports:[
- CommonModule,
-NgtUniversalModule,
- 
- TransferHttpCacheModule,
-HttpClientModule,
- 
-    
+  imports: [
+    CommonModule,
+    NgtUniversalModule,
+
+    TransferHttpCacheModule,
+    HttpClientModule,
+
+
     AppRoutingModule
   ],
   providers: [],
