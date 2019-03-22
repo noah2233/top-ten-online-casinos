@@ -7,11 +7,6 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
-import { NgRedux, NgReduxModule } from 'ng2-redux';
-import { IAppState, RootReducer, INITAL_STATE } from './state/store';
-
-
 @NgModule({
   declarations: [
     AppComponent
@@ -22,13 +17,9 @@ import { IAppState, RootReducer, INITAL_STATE } from './state/store';
     NgtUniversalModule,
     TransferHttpCacheModule,
     HttpClientModule,
-    AppRoutingModule,
-    NgReduxModule
+    AppRoutingModule
   ],
   providers: [],
 })
 export class AppModule {
-  constructor(_ngRedux: NgRedux<IAppState>) {
-    _ngRedux.configureStore(RootReducer, INITAL_STATE);
-  }
 }
