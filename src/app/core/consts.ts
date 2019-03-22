@@ -1,2 +1,1 @@
-export const pages = {
-}
+export const pages = {};
