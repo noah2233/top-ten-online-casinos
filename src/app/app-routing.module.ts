@@ -3,12 +3,10 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { pages } from '@core/consts';
 
-import { TestComponent } from '@pages/test/test.component';
-
 const routes: Routes = [
-  { path: '', redirectTo: '/test', pathMatch: 'full' },
-  { path: pages.test, component: TestComponent },
-  { path: '**', component: TestComponent }
+  // { path: '', redirectTo: pages.test, pathMatch: 'full' },
+  // { path: pages.test, component: TestComponent },
+  // { path: '**', component: TestComponent }
 ];
 
 @NgModule({
