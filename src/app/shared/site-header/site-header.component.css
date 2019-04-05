@@ -9,6 +9,11 @@ nav .logo {
     height: 35px;
 }
 
+nav .navbar-collapse ul {
+    font-size: 16px;
+    font-weight: 400;
+}
+
 nav .navbar-collapse ul li {
     margin-left: 20px;
 }
