@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as pages from '@core/consts/pages';
+
 @Component({
   selector: 'site-header',
   templateUrl: './site-header.component.html',
@@ -7,6 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SiteHeaderComponent implements OnInit {
   public toggleNavbar = true;
+
   constructor() { }
 
   ngOnInit() {
