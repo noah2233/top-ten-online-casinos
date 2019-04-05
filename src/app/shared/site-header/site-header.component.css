@@ -1,3 +1,30 @@
 nav {
     background-color: #062a61;
 }
+
+nav .logo {
+    background: url('/assets/images/shared/site-header/logo-desktop.png') top center no-repeat;
+    background-size: contain;
+    width: 230px;
+    height: 35px;
+}
+
+nav .navbar-collapse ul li {
+    margin-left: 20px;
+}
+
+/* media-query */
+
+@media only screen and (max-width: 1199px) {
+    nav .navbar-collapse ul li {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    nav .logo {
+        background-image: url('/assets/images/shared/site-header/logo-mobile.png');
+        width: 185px;
+        height: 30px;
+    }
+}
