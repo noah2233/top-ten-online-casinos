@@ -7,7 +7,7 @@ body {
     background-color: #fff;
 }
 
-ul {
+ul, p {
     margin: 0;
 }
 

@@ -1,4 +1,9 @@
 footer {
     background-color: #4c4c4c;
     border-top: 1px solid #bdcbd9;
+    padding: 5px 0;
+}
+
+footer .links {
+    display: flex;
 }
