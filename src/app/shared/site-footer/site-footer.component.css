@@ -6,4 +6,20 @@ footer {
 
 footer .links {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+footer .links .link {
+    font-size: 12px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+footer .links .link a {
+    color: #fff;
+}
+
+footer .links .link span.separator {
+    margin: 0 5px;
 }
