@@ -14,3 +14,13 @@ ul, p {
 h1, h2, h3, h4, h5, h6, p {
     line-height: 1;
 }
+
+router-outlet+* {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site-main {
+    flex: 1;
+}
