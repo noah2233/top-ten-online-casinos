@@ -15,11 +15,13 @@ import { SiteHeaderComponent } from './shared/site-header/site-header.component'
 
 // pages
 import { HomeComponent } from './pages/home/home.component';
+import { SiteFooterComponent } from './shared/site-footer/site-footer.component';
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    SiteHeaderComponent
+    SiteHeaderComponent,
+    SiteFooterComponent
   ],
   imports: [
     CommonModule,
