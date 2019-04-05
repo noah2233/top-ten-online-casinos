@@ -5,14 +5,21 @@ import { TransferHttpCacheModule } from '@nguniversal/common';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+
+// core
+import { SiteHeaderComponent } from './shared/site-header/site-header.component';
+
 // pages
 import { HomeComponent } from './pages/home/home.component';
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    SiteHeaderComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +27,8 @@ import { HomeComponent } from './pages/home/home.component';
     NgtUniversalModule,
     TransferHttpCacheModule,
     HttpClientModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgbModule
   ],
   providers: [],
 })
