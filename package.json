@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "postinstall": "npm run build:prod",
-    "build:server:prod": "ng run top-ten-online-casinos:server && webpack --config webpack.server.config.js --progress --colors --prod=true",
+    "build:server:prod": "ng run top-ten-online-casinos:server && webpack --config webpack.server.config.js --progress --colors --mode production",
     "build:browser:prod": "ng build --prod=true",
     "build:prod": "npm run build:server:prod && npm run build:browser:prod",
     "server": "node local.js"
