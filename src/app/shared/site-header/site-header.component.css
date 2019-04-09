@@ -18,7 +18,7 @@ nav .navbar-collapse ul li {
     margin-left: 20px;
 }
 
-/* media-query */
+/* media-queries */
 
 @media only screen and (max-width: 1199px) {
     nav .navbar-collapse ul li {
