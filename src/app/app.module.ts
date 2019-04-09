@@ -22,6 +22,7 @@ import { SlotsComponent } from './pages/slots/slots.component';
 import { BlackjackComponent } from './pages/blackjack/blackjack.component';
 import { RouletteComponent } from './pages/roulette/roulette.component';
 import { LiveCasinoComponent } from './pages/live-casino/live-casino.component';
+import { TopTenComponent } from './top-ten/top-ten.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,7 +34,8 @@ import { LiveCasinoComponent } from './pages/live-casino/live-casino.component';
     SlotsComponent,
     BlackjackComponent,
     RouletteComponent,
-    LiveCasinoComponent
+    LiveCasinoComponent,
+    TopTenComponent
   ],
   imports: [
     CommonModule,

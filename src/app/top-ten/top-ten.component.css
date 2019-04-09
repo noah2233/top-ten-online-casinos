@@ -1,0 +1,42 @@
+.items {
+    display: flex;
+    border: 1px solid #efefef;
+    padding: 20px 15px 15px;
+    min-height: 130px;
+}
+
+.items .item {
+    flex: 1;
+}
+
+.items .item.item-image {
+    background: url('/assets/images/brands/32red.png') top center no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.items .item.item-image .ribbon {
+    text-transform: uppercase;
+    position: absolute;
+    top: -9px;
+    left: -15px;
+    background-color: #ef6000;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 165px;
+    padding-left: 15px;
+}
+
+.items .item.item-image .ribbon:after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: -9px;
+    border-right: 9px solid transparent;
+    top: 0px;
+    width: 0;
+    height: 0;
+    border-bottom: 10px solid #ef6000;
+    border-top: 10px solid #ef6000;
+}
