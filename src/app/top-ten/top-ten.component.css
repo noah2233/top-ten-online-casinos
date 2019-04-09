@@ -9,6 +9,8 @@
     flex: 3;
 }
 
+/* tem-casino-site */
+
 .items .item.item-casino-site a {
     background: url('/assets/images/brands/32red.png') top center no-repeat;
     background-size: contain;
@@ -43,6 +45,8 @@
     border-top: 10px solid #ef6000;
 }
 
+/* item-welcome-bonus */
+
 .items .item.item-welcome-bonus {
     text-align: center;
     flex: 4;
@@ -71,4 +75,40 @@
     color: #666;
     display: inline-block;
     vertical-align: top;
+}
+
+/* item-user-rating */
+
+.items .item.item-user-rating {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.items .item.item-user-rating .stars {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.items .item.item-user-rating .stars .star {
+    background: url('/assets/images/top-ten/empty-star.png') top center no-repeat;
+    width: 20px;
+    height: 18px;
+}
+
+.items .item.item-user-rating .stars .star.half-star {
+    background-image: url('/assets/images/top-ten/half-star.png');
+}
+
+.items .item.item-user-rating .stars .star.full-star {
+    background-image: url('/assets/images/top-ten/full-star.png');
+}
+
+.items .item.item-user-rating .read-review {
+    text-transform: capitalize;
+    color: #0288d1;
+    font-weight: 100;
+    font-size: 13px;
 }
