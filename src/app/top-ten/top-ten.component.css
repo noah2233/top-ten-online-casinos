@@ -6,19 +6,19 @@
 }
 
 .items .item {
-    flex: 1;
+    flex: 3;
 }
 
-.items .item.item-image {
+.items .item.item-casino-site {
     background: url('/assets/images/brands/32red.png') top center no-repeat;
     background-size: contain;
     position: relative;
 }
 
-.items .item.item-image .ribbon {
+.items .item.item-casino-site .ribbon {
     text-transform: uppercase;
     position: absolute;
-    top: -9px;
+    top: -12px;
     left: -15px;
     background-color: #ef6000;
     color: #fff;
@@ -28,7 +28,7 @@
     padding-left: 15px;
 }
 
-.items .item.item-image .ribbon:after {
+.items .item.item-casino-site .ribbon:after {
     content: "";
     display: block;
     position: absolute;
@@ -39,4 +39,26 @@
     height: 0;
     border-bottom: 10px solid #ef6000;
     border-top: 10px solid #ef6000;
+}
+
+.items .item.item-welcome-bonus {
+    text-align: center;
+    flex: 4;
+}
+
+.items .item.item-welcome-bonus p {
+    text-align: center;
+    flex: 4;
+    line-height: 1.2;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.items .item.item-welcome-bonus p .HLB {
+    color: #2aaff7;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: 700;
 }
