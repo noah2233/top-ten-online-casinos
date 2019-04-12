@@ -16,7 +16,7 @@
 }
 
 .items .item.item-casino-site a {
-    background: url('/assets/images/brands/32red.png') top center no-repeat;
+    background: url('/assets/images/brands/32red/desktop.png') top center no-repeat;
     background-size: cover;
     position: relative;
     display: block;
@@ -188,6 +188,10 @@
     font-size: 13px;
 }
 
+p.mobile-disclaimer {
+    display: none;
+}
+
 /* media-queries */
 
 @media only screen and (max-width: 991px) {
@@ -228,7 +232,23 @@
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
         filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#191919', GradientType=1);
         /* IE6-9 */
-        flex-direction: column;
+        flex-wrap: wrap;
     }
-    .items .item {}
+    .items .item, .items .item.item-casino-site, .items .item.item-welcome-bonus {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .items .item.item-user-rating, .items .item.item-our-score {
+        flex: 0 0 25%;
+        max-width: 25%;
+    }
+    .items .item.item-casino-site a {
+        background: url('/assets/images/brands/32red/mobile.png') top center no-repeat;
+        background-size: contain;
+        height: 50px;
+        width: 165px;
+    }
+    .items .item.item-welcome-bonus p.disclaimer {
+        display: none;
+    }
 }
