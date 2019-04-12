@@ -13,6 +13,7 @@
 
 .items .item.item-casino-site {
     flex: 4;
+    position: relative;
 }
 
 .items .item.item-casino-site a {
@@ -23,7 +24,7 @@
     height: 100%;
 }
 
-.items .item.item-casino-site a .ribbon {
+.items .item.item-casino-site .ribbon {
     text-transform: uppercase;
     position: absolute;
     top: -12px;
@@ -34,9 +35,10 @@
     font-weight: 400;
     min-width: 165px;
     padding-left: 15px;
+    height: 20px;
 }
 
-.items .item.item-casino-site a .ribbon:after {
+.items .item.item-casino-site .ribbon:after {
     content: "";
     display: block;
     position: absolute;
@@ -247,8 +249,12 @@ p.mobile-disclaimer {
         background-size: contain;
         height: 50px;
         width: 165px;
+        margin: 15px auto 0;
     }
     .items .item.item-welcome-bonus p.disclaimer {
         display: none;
+    }
+    .items .item.item-welcome-bonus p {
+        color: #fff;
     }
 }
