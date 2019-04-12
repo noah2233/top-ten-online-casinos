@@ -17,7 +17,7 @@
 
 .items .item.item-casino-site a {
     background: url('/assets/images/brands/32red.png') top center no-repeat;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     display: block;
     height: 100%;
@@ -138,9 +138,6 @@
 }
 
 .items .item.item-bonus {
-    font-weight: 500;
-    font-size: 64px;
-    color: #2aaff7;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -161,9 +158,9 @@
     background-repeat: repeat-x;
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFC71A", endColorstr="#FFF09819", GradientType=0);
     box-shadow: 1.2px 2.7px 7.5px 0.5px rgba(0, 0, 0, 0.2);
-    color: #000 !important;
-    font-size: 23px !important;
-    font-weight: 400 !important;
+    color: #000;
+    font-size: 23px;
+    font-weight: 400;
     text-transform: capitalize;
     align-items: center;
     justify-content: center;
@@ -194,13 +191,42 @@
 /* media-queries */
 
 @media only screen and (max-width: 991px) {
-    /* .items .item.item-user-rating {
-        display: none;
-    }
     .items .item {
         flex: 2;
     }
-    .items .item.item-casino-site, .items .item.item-welcome-bonus {
+    .items .item.item-casino-site {
         flex: 3;
-    } */
+    }
+    .items .item.item-welcome-bonus {
+        flex: 5;
+    }
+    .items .item.item-our-score .score {
+        font-size: 50px;
+    }
+    .items .item.item-bonus .get-bonus {
+        font-size: 18px;
+    }
+    .items .item.item-user-rating .stars{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .items .item.item-user-rating .star {
+        flex: 0 0 30%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .items {
+        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#292929+50,191919+50 */
+        /* background: #292929; */
+        /* Old browsers */
+        /* background: -moz-linear-gradient(left, #292929 50%, #191919 50%); */
+        /* FF3.6-15 */
+        /* background: -webkit-linear-gradient(left, #292929 50%, #191919 50%); */
+        /* Chrome10-25,Safari5.1-6 */
+        /* background: linear-gradient(to right, #292929 50%, #191919 50%); */
+        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#191919', GradientType=1); */
+        /* IE6-9 */
+    }
 }
