@@ -206,7 +206,7 @@
     .items .item.item-bonus .get-bonus {
         font-size: 18px;
     }
-    .items .item.item-user-rating .stars{
+    .items .item.item-user-rating .stars {
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -218,15 +218,17 @@
 @media only screen and (max-width: 767px) {
     .items {
         /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#292929+50,191919+50 */
-        /* background: #292929; */
+        background: #292929;
         /* Old browsers */
-        /* background: -moz-linear-gradient(left, #292929 50%, #191919 50%); */
+        background: -moz-linear-gradient(left, #292929 50%, #191919 50%);
         /* FF3.6-15 */
-        /* background: -webkit-linear-gradient(left, #292929 50%, #191919 50%); */
+        background: -webkit-linear-gradient(left, #292929 50%, #191919 50%);
         /* Chrome10-25,Safari5.1-6 */
-        /* background: linear-gradient(to right, #292929 50%, #191919 50%); */
+        background: linear-gradient(to right, #292929 50%, #191919 50%);
         /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#191919', GradientType=1); */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#292929', endColorstr='#191919', GradientType=1);
         /* IE6-9 */
+        flex-direction: column;
     }
+    .items .item {}
 }
