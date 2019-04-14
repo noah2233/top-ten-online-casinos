@@ -276,6 +276,9 @@ a.mobile-disclaimer br {
         flex-wrap: wrap;
         padding: 20px 0;
     }
+    .items .item {
+        border: none;
+    }
     .items .item, .items .item.item-casino-site, .items .item.item-welcome-bonus {
         flex: 0 0 50%;
         max-width: 50%;
@@ -345,12 +348,16 @@ a.mobile-disclaimer br {
 @media only screen and (max-width: 375px) {
     .items {
         margin: 0 -15px;
+        border: none;
     }
     .items .item.item-bonus .get-bonus {
         width: 125px;
     }
     .items .item.item-user-rating .stars .star {
         flex: 0 0 30%;
+    }
+    .items .item.item-casino-site .ribbon {
+        left: 0;
     }
 }
 
