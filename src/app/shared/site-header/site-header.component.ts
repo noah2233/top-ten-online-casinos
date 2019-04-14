@@ -10,9 +10,12 @@ import * as pages from '@core/consts/pages';
 export class SiteHeaderComponent implements OnInit {
   public toggleNavbar = true;
 
+  public get pages() {
+    return pages;
+  }
+
   constructor() { }
 
   ngOnInit() {
   }
-
 }
