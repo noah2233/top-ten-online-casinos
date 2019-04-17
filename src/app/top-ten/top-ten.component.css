@@ -3,6 +3,7 @@
     border: 1px solid #efefef;
     padding: 20px 15px 15px;
     min-height: 130px;
+    background: #fff;
 }
 
 .items .item {
@@ -89,6 +90,7 @@
     color: #666;
     display: inline-block;
     vertical-align: top;
+    margin-bottom: 0;
 }
 
 /* item-user-rating */

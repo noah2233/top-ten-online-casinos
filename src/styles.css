@@ -1,13 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 
+/*fonts*/
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('/assets/fonts/roboto-fontfacekit/web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot');
+    src: url('/assets/fonts/roboto-fontfacekit/web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype') url('/src/assets/fonts/roboto-fontfacekit/web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff2') format('woff2') url('/src/assets/fonts/roboto-fontfacekit/web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.woff') format('woff'), url('/src/assets/fonts/roboto-fontfacekit/web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.ttf') format('truetype'), url('/src/assets/fonts/roboto-fontfacekit/web-fonts/roboto_regular_macroman/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: 'robotoregular', Arial, sans-serif;
     font-size: 14px;
     color: #333;
     background-color: #fff;
 }
 
-ul, p {
+ul {
     margin: 0;
 }
 
@@ -23,6 +33,33 @@ router-outlet+* {
 
 .site-main {
     flex: 1;
+    padding-top: 30px;
+}
+
+/* top-x-title */
+
+.top-x-title {
+    color: #fff;
+    display: flex;
+}
+
+.top-x-title .top-x-title-image {
+    background: url('/assets/images/thumborange.png') no-repeat;
+    width: 41px;
+    height: 41px;
+    margin-right: 20px;
+}
+
+.top-x-title .top-x-title-body h1 {
+    font-size: 34px;
+    font-weight: 700;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    text-transform: capitalize;
+}
+
+.top-x-title .top-x-title-body h2 {
+    font-size: 26px;
+    font-weight: 500;
 }
 
 /* media-queries */

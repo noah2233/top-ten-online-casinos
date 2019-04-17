@@ -1,0 +1,11 @@
+.site-main {
+    background: url('/assets/images/pages/home/bg-casino-2019.jpg') no-repeat;
+    background-attachment: fixed;
+}
+
+p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.3;
+}
