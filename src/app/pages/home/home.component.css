@@ -24,6 +24,7 @@ p {
 .additional-data {
     display: flex;
     margin-bottom: 10px;
+    position: relative;
 }
 
 .additional-data .filter-top-ten {
