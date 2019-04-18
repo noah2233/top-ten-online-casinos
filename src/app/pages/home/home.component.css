@@ -9,3 +9,14 @@ p {
     font-weight: 300;
     line-height: 1.3;
 }
+
+.bonuses-updated {
+    color: #ed5504;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.bonuses-updated .title {
+    color: #dfdfdf;
+    font-weight: 300;
+}
