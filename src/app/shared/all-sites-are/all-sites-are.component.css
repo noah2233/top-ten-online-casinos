@@ -1,0 +1,53 @@
+.all-sites-are {
+    display: flex;
+    color: #ddd;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.all-sites-are .title {}
+
+.all-sites-are ul {
+    display: flex;
+}
+
+.all-sites-are ul li {
+    margin-right: 5px;
+}
+
+.all-sites-are ul li:last-of-type {
+    margin-right: 0;
+}
+
+.all-sites-are ul li:before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.all-sites-are ul li.uk-licensed:before {
+    background-image: url('/assets/images/shared/all-sites-are/uk-flag.png');
+    width: 25px;
+    height: 18px;
+}
+
+.all-sites-are ul li.secure-and-trusted:before {
+    background-image: url('/assets/images/shared/all-sites-are/thumb-up-small.png');
+    width: 21px;
+    height: 21px;
+}
+
+.all-sites-are ul li.fast-withdrawals:before {
+    background-image: url('/assets/images/shared/all-sites-are/pound.png');
+    width: 17px;
+    height: 17px;
+}
+
+@media only screen and (max-width: 1199px) {
+    .all-sites-are {
+        display: none;
+    }
+}
