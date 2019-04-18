@@ -20,3 +20,24 @@ p {
     color: #dfdfdf;
     font-weight: 300;
 }
+
+.additional-data {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.additional-data .filter-top-ten {
+    margin-right: 15px;
+}
+
+.additional-data .filter-top-ten label {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 100;
+    margin: 0 15px 0 0;
+    text-transform: uppercase;
+}
+
+.additional-data .filter-top-ten select {
+    width: 100px;
+}
