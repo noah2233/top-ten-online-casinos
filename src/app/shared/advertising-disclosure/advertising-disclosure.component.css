@@ -1,6 +1,9 @@
-button.title {
+:host {
     position: absolute;
     right: 0;
+}
+
+button.title {
     padding: 0;
     line-height: 1;
     color: #ddd;
