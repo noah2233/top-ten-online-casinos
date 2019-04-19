@@ -79,9 +79,19 @@ router-outlet+* {
     }
     .top-x-title {
         margin: 0 -15px;
+        padding: 30px 15px 0;
     }
     .top-x-title.home {
-        background: url('/assets/images/pages/home/casino1.jpg') no-repeat;
+        background: url('/assets/images/pages/home/casino1.jpg') center no-repeat;
         background-size: cover;
+    }
+    .top-x-title .top-x-title-image {
+        display: none;
+    }
+    .top-x-title .top-x-title-body h1 {
+        font-size: 22px;
+    }
+    .top-x-title .top-x-title-body h2 {
+        font-size: 18px;
     }
 }
