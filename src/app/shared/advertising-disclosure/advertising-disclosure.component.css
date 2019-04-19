@@ -1,6 +1,7 @@
 :host {
     position: absolute;
     right: 0;
+    bottom: 0;
 }
 
 button.title {
@@ -11,6 +12,7 @@ button.title {
     opacity: 0.7;
     text-transform: capitalize;
     font-size: 14px;
+    display: block;
 }
 
 .advertising-disclosure-box {
@@ -47,4 +49,20 @@ button.title {
     color: #21538d;
     opacity: 0.7;
     text-transform: uppercase;
+}
+
+/* media-queries */
+
+@media only screen and (max-width: 1199px) {
+    :host {
+        position: static;
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    button.title {
+        font-size: 12px;
+        font-weight: 400;
+    }
 }
