@@ -69,3 +69,19 @@ router-outlet+* {
         max-width: initial;
     }
 }
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: #292929;
+    }
+    .site-main {
+        padding-top: 0;
+    }
+    .top-x-title {
+        margin: 0 -15px;
+    }
+    .top-x-title.home {
+        background: url('/assets/images/pages/home/casino1.jpg') no-repeat;
+        background-size: cover;
+    }
+}

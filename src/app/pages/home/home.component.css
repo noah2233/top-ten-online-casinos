@@ -42,3 +42,11 @@ p {
 .additional-data .filter-top-ten select {
     width: 100px;
 }
+
+/* media-queries */
+
+@media only screen and (max-width: 767px) {
+    .site-main {
+       background: none;
+    }
+}
