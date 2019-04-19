@@ -6,10 +6,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./advertising-disclosure.component.css']
 })
 export class AdvertisingDisclosureComponent implements OnInit {
+  showAdvertisingDisclosure: boolean;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  toggleAdvertisingDisclosure() {
+    this.showAdvertisingDisclosure = !this.showAdvertisingDisclosure;
   }
 
 }
