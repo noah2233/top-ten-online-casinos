@@ -1,11 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'advertising-disclosure',
   templateUrl: './advertising-disclosure.component.html',
   styleUrls: ['./advertising-disclosure.component.css']
 })
-export class AdvertisingDisclosureComponent implements OnInit {
+export class AdvertisingDisclosureComponent implements OnInit, OnDestroy {
   showAdvertisingDisclosure: boolean;
   contant =
     `<div class="title">advertising disclosure</div>
@@ -24,11 +24,31 @@ export class AdvertisingDisclosureComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.addMobileDisclosure();
+  }
+
+  ngOnDestroy() {
+    this.removeMobileDisclosure();
   }
 
   toggleAdvertisingDisclosure() {
-    console.log(1);
     this.showAdvertisingDisclosure = !this.showAdvertisingDisclosure;
   }
+
+  addMobileDisclosure() {
+    // create a new div element
+    const mobileDisclosure: HTMLElement = document.createElement('div');
+    mobileDisclosure.classList.add('advertising-disclosure-box');
+    mobileDisclosure.classList.add('mobile');
+    mobileDisclosure.innerHTML = this.contant;
+
+    // add the newly created element and its content into the DOM
+    const list: NodeListOf<ChildNode> = document.getElementById('site-main').childNodes;
+    list.forEach(function (node) {
+      node.appendChild(mobileDisclosure);
+    });
+  }
+
+  removeMobileDisclosure() { }
 
 }

@@ -52,6 +52,20 @@ button.title {
     text-transform: uppercase;
 }
 
+::ng-deep .advertising-disclosure-box.mobile {
+    display: none;
+    padding: 15px;
+    background-color: #e6e6e6;
+    margin: 0 -15px;
+}
+
+::ng-deep .advertising-disclosure-box.mobile .title {
+    color: #000;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: left;
+}
+
 /* media-queries */
 
 @media only screen and (max-width: 1199px) {
@@ -65,5 +79,8 @@ button.title {
     button.title {
         font-size: 12px;
         font-weight: 400;
+    }
+    ::ng-deep .advertising-disclosure-box.mobile {
+        display: block;
     }
 }
