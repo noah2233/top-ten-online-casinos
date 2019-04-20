@@ -49,17 +49,17 @@ p {
     width: 100px;
 }
 
-h2.top-sites-title {
+.top-sites h2.top-sites-title {
     text-transform: capitalize;
     color: #fff;
     font-size: 40px;
     font-weight: 900;
-    margin-bottom: 10px;
+    margin: 30px 0 15px;
     display: flex;
     align-items: center;
 }
 
-h2.top-sites-title:before {
+.top-sites h2.top-sites-title:before {
     content: '';
     background-repeat: no-repeat;
     background-position: center;
@@ -68,16 +68,26 @@ h2.top-sites-title:before {
     margin-right: 15px;
 }
 
-h2.top-sites-title.top-live-casino-sites-title:before {
+.top-sites h2.top-sites-title.top-live-casino-sites-title:before {
     width: 43px;
     height: 43px;
     background-image: url('/assets/images/pages/home/LiveCasino-Icon.png');
 }
 
-h2.top-sites-title.top-slots-sites-title:before {
+.top-sites h2.top-sites-title.top-slots-sites-title:before {
     width: 44px;
     height: 29px;
     background-image: url('/assets/images/pages/home/4-layers.png');
+}
+
+.top-sites a.top-sites-link {
+    display: block;
+    color: #2aaff7;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: capitalize;
+    text-align: right;
+    margin-top: 15px;
 }
 
 /* media-queries */
@@ -111,5 +121,9 @@ h2.top-sites-title.top-slots-sites-title:before {
     }
     .bonuses-updated .title {
         color: #fefefe;
+    }
+
+    .top-sites {
+        display: none;
     }
 }
