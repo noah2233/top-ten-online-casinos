@@ -16,6 +16,11 @@ import { AppComponent } from './app.component';
 import { SiteHeaderComponent } from './shared/site-header/site-header.component';
 import { SiteFooterComponent } from './shared/site-footer/site-footer.component';
 import { AllSitesAreComponent } from './shared/all-sites-are/all-sites-are.component';
+import { AdvertisingDisclosureComponent } from './shared/advertising-disclosure/advertising-disclosure.component';
+
+// top ten
+import { TopTenComponent } from './top-ten/top-ten.component';
+import { TopTenMenuComponent } from './top-ten/top-ten-menu/top-ten-menu.component';
 
 // pages
 import { HomeComponent } from './pages/home/home.component';
@@ -25,8 +30,6 @@ import { SlotsComponent } from './pages/slots/slots.component';
 import { BlackjackComponent } from './pages/blackjack/blackjack.component';
 import { RouletteComponent } from './pages/roulette/roulette.component';
 import { LiveCasinoComponent } from './pages/live-casino/live-casino.component';
-import { TopTenComponent } from './top-ten/top-ten.component';
-import { AdvertisingDisclosureComponent } from './shared/advertising-disclosure/advertising-disclosure.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +45,8 @@ import { AdvertisingDisclosureComponent } from './shared/advertising-disclosure/
     LiveCasinoComponent,
     TopTenComponent,
     AllSitesAreComponent,
-    AdvertisingDisclosureComponent
+    AdvertisingDisclosureComponent,
+    TopTenMenuComponent
   ],
   imports: [
     CommonModule,

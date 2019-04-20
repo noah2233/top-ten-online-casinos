@@ -1,0 +1,47 @@
+.top-ten-menu-items {
+    display: flex;
+    align-items: center;
+    background-color: #124da8;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 100;
+    text-align: center;
+    padding: 0 15px;
+    min-height: 40px;
+}
+
+.top-ten-menu-items .top-ten-menu-item {
+    flex: 3;
+}
+
+.top-ten-menu-items .top-ten-menu-item.casino-site {
+    flex: 4;
+}
+
+.top-ten-menu-items .top-ten-menu-item.welcome-bonus {
+    flex: 5;
+}
+
+/* media-queries */
+
+@media only screen and (max-width: 991px) {
+    .top-ten-menu-items {
+        font-size: 14px;
+    }
+    .top-ten-menu-items .top-ten-menu-item {
+        flex: 2;
+    }
+    .top-ten-menu-items .top-ten-menu-item.casino-site {
+        flex: 3;
+    }
+    .top-ten-menu-items .top-ten-menu-item.welcome-bonus {
+        flex: 5;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    :host {
+        display: none;
+    }
+}
