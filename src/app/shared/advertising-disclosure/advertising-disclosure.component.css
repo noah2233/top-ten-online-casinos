@@ -80,6 +80,9 @@ button.title {
         font-size: 12px;
         font-weight: 400;
     }
+    .advertising-disclosure-box.desktop {
+        display: none;
+    }
     ::ng-deep .advertising-disclosure-box.mobile {
         display: block;
     }

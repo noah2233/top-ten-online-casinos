@@ -33,6 +33,11 @@ export class AdvertisingDisclosureComponent implements OnInit, OnDestroy {
 
   toggleAdvertisingDisclosure() {
     this.showAdvertisingDisclosure = !this.showAdvertisingDisclosure;
+
+    const elmnt: HTMLElement = document.getElementById('advertising-disclosure-box-mobile');
+    if (elmnt) {
+      elmnt.scrollIntoView();
+    }
   }
 
   addMobileDisclosure() {
@@ -40,6 +45,7 @@ export class AdvertisingDisclosureComponent implements OnInit, OnDestroy {
     const mobileDisclosure: HTMLElement = document.createElement('div');
     mobileDisclosure.classList.add('advertising-disclosure-box');
     mobileDisclosure.classList.add('mobile');
+    mobileDisclosure.id = 'advertising-disclosure-box-mobile';
     mobileDisclosure.innerHTML = this.contant;
 
     // add the newly created element and its content into the DOM
