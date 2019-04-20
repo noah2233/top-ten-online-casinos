@@ -3,11 +3,11 @@
     background-attachment: fixed;
 }
 
-p {
+p.learn-more {
     color: #fff;
-    font-size: 14px;
+    /* font-size: 14px; */
     font-weight: 300;
-    line-height: 1.3;
+    line-height: 1.4;
 }
 
 /* additional-data */
@@ -80,13 +80,16 @@ p {
     background-image: url('/assets/images/pages/home/4-layers.png');
 }
 
-.top-sites a.top-sites-link {
-    display: block;
+.top-sites .top-sites-link  {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.top-sites .top-sites-link a {
     color: #2aaff7;
     font-size: 18px;
     font-weight: 500;
     text-transform: capitalize;
-    text-align: right;
     margin-top: 15px;
 }
 
@@ -122,7 +125,6 @@ p {
     .bonuses-updated .title {
         color: #fefefe;
     }
-
     .top-sites {
         display: none;
     }
