@@ -25,6 +25,10 @@
     height: 100%;
 }
 
+.items .item.item-casino-site a:hover {
+    opacity: .8;
+}
+
 .items .item.item-casino-site .ribbon {
     text-transform: uppercase;
     position: absolute;
@@ -277,6 +281,7 @@ a.mobile-disclaimer br {
         /* IE6-9 */
         flex-wrap: wrap;
         padding: 20px 0;
+        border: none;
     }
     .items .item {
         border: none;
