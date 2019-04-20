@@ -1,4 +1,6 @@
-<button (click)="toggleAdvertisingDisclosure()" class="btn btn-link title" href="javascript:void(0)">advertising
+<button (click)="toggleAdvertisingDisclosure()" class="btn btn-link title">advertising
     disclosure</button>
-<div *ngIf="showAdvertisingDisclosure" class="advertising-disclosure-box desktop" [innerHTML]="contant">
+<div *ngIf="showAdvertisingDisclosure" class="advertising-disclosure-box desktop">
+    <div [innerHTML]="contant"></div>
+    <a href="javascript:void(0)" (click)="toggleAdvertisingDisclosure()" class="btn btn-link got-it">got it</a>
 </div>

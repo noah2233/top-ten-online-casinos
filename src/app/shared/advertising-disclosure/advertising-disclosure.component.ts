@@ -20,14 +20,14 @@ export class AdvertisingDisclosureComponent implements OnInit {
       endorsement.Except as expressly set forth in our <a href = "javascript:void(0)">Terms of Use</a>,
       all representations and warranties regarding the information presented on this page are
       disclaimed.The information, including pricing, which appears on this site is subject to change at any time.
-    </p>
-    <a href="javascript:void(0)" (click)="toggleAdvertisingDisclosure()" class="btn btn-link got-it">got it</a>`;
+    </p>`;
   constructor() { }
 
   ngOnInit() {
   }
 
   toggleAdvertisingDisclosure() {
+    console.log(1);
     this.showAdvertisingDisclosure = !this.showAdvertisingDisclosure;
   }
 

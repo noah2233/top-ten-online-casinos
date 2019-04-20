@@ -39,10 +39,11 @@ button.title {
     font-size: 13px;
     color: #3e3e3e;
     line-height: 1.5;
+    /* margin: 0; */
 }
 
 ::ng-deep .advertising-disclosure-box .got-it {
-    float: right;
+    text-align: right;
     line-height: 1;
     display: block;
     padding: 0;
