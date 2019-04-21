@@ -31,6 +31,7 @@ p.learn-more {
 .additional-data .bonuses-updated .title {
     color: #dfdfdf;
     font-weight: 300;
+    text-transform: capitalize;
 }
 
 .additional-data .filter-top-ten {

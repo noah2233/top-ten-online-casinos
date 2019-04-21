@@ -74,10 +74,6 @@ router-outlet+* {
 
 /* how-to-section */
 
-.how-to-section {
-    /* margin-bottom: 15px; */
-}
-
 .how-to-section h3.title {
     font-size: 14px;
     line-height: 1.5;
