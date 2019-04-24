@@ -8,26 +8,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarColor01" [ngbCollapse]="toggleNavbar">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a routerLink="/" href="javascript:void(0)" class="nav-link">Top 10 Casinos</a>
-          </li>
-          <li class="nav-item">
-            <a href="javascript:void(0)" [routerLink]="['/'+ pages.casinoReviews]" class="nav-link">Reviews</a>
-          </li>
-          <li class="nav-item">
-            <a href="javascript:void(0)" [routerLink]="['/'+ pages.articles]" class="nav-link">Articles</a>
-          </li>
-          <li class="nav-item">
-            <a href="javascript:void(0)" [routerLink]="['/'+ pages.slots]" class="nav-link">Slots</a>
-          </li>
-          <li class="nav-item">
-            <a href="javascript:void(0)" [routerLink]="['/'+ pages.blackjack]" class="nav-link">Blackjack</a>
-          </li>
-          <li class="nav-item">
-            <a href="javascript:void(0)" [routerLink]="['/'+ pages.roulette]" class="nav-link">Roulette</a>
-          </li>
-          <li class="nav-item">
-            <a href="javascript:void(0)" [routerLink]="['/'+ pages.liveCasino]" class="nav-link">Live Casino</a>
+          <li *ngFor="let navItem of navItems" [ngClass]="{active:isActive(navItem)}">
+            <a routerLink="{{navItem.link}}" href="javascript:void(0)" class="nav-link">{{navItem.name}}</a>
           </li>
         </ul>
       </div>

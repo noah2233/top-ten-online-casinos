@@ -3,3 +3,8 @@ export interface Review {
     description: string;
     link: string;
 }
+
+export interface NavItem {
+    name: string;
+    link: string;
+}
