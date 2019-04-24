@@ -125,6 +125,16 @@ p.page-subtitle {
     font-size: 13px;
 }
 
+.show-more-reviews {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.show-more-reviews button {
+    font-size: 12px;
+    color: #4a90e2;
+}
+
 .advertising-disclosure h3 {
     font-size: 18px;
     color: #0288d1;
