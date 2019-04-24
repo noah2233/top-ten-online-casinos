@@ -124,3 +124,18 @@ p.page-subtitle {
     font-weight: 100;
     font-size: 13px;
 }
+
+.advertising-disclosure h3 {
+    font-size: 18px;
+    color: #0288d1;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.advertising-disclosure p {
+    font-size: 12px;
+    color: #212121;
+    line-height: 1.5;
+}
