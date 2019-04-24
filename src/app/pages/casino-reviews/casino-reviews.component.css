@@ -41,7 +41,7 @@ p.page-subtitle {
 }
 
 .reviews .review .review-items .review-item.review-item-casino-site a {
-    background: url('/assets/images/brands/32red/desktop.png') top center no-repeat;
+    background: url('/assets/images/brands/32red/desktop.png') center center no-repeat;
     background-size: cover;
     display: block;
     height: 100%;
@@ -133,6 +133,7 @@ p.page-subtitle {
 .show-more-reviews button {
     font-size: 12px;
     color: #4a90e2;
+    padding: 0;
 }
 
 .advertising-disclosure h3 {
@@ -148,4 +149,34 @@ p.page-subtitle {
     font-size: 12px;
     color: #212121;
     line-height: 1.5;
+}
+
+/* media-queries */
+
+@media only screen and (max-width: 767px) {
+    h1.page-title {
+        font-size: 32px;
+    }
+    p.page-subtitle {
+        font-size: 16px;
+        color: #727272;
+        line-height: 1.2;
+    }
+    .reviews {
+        margin: 0 -15px;
+    }
+    .reviews .review {
+        margin-bottom: 10px;
+    }
+    .reviews .review .review-items {
+        min-height: 100px;
+        padding: 0;
+    }
+    .reviews .review .review-items .review-item.review-item-get-bonus {
+        display: none;
+    }
+    .reviews .review .review-items .review-item.review-item-body {
+        flex: 1;
+        padding: 10px;
+    }
 }
