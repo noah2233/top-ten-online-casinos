@@ -1,0 +1,80 @@
+.site-main {
+    background-color: #eee;
+}
+
+.site-main .container {
+    background-color: #fff;
+}
+
+h1.page-title {
+    font-size: 40px;
+    color: #0288d1;
+}
+
+p.page-subtitle {
+    font-size: 14px;
+    color: #212121;
+}
+
+/* reviews */
+
+.reviews .review {
+    border-bottom: 1px solid #abe2fc;
+}
+
+.reviews .review:first-of-type {
+    border-top: 1px solid #abe2fc;
+}
+
+/* review-items */
+
+.reviews .review .review-items {
+    display: flex;
+    min-height: 115px;
+    padding: 10px 0;
+}
+
+/* .reviews .review .review-items .review-item {
+    flex: 3;
+} */
+
+.reviews .review .review-items .review-item.review-item-casino-site {
+    flex: 1;
+}
+
+.reviews .review .review-items .review-item.review-item-casino-site a {
+    background: url('/assets/images/brands/32red/desktop.png') top center no-repeat;
+    background-size: cover;
+    display: block;
+    height: 100%;
+}
+
+.reviews .review .review-items .review-item.review-item-casino-site a:hover{
+  opacity: .8;
+}
+
+.reviews .review .review-items .review-item.review-item-body {
+    flex: 3;
+    padding: 0 25px;
+    display: block;
+}
+
+.reviews .review .review-items .review-item.review-item-body a.site-name {
+    color: #212121;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.reviews .review .review-items .review-item.review-item-body p {
+    color: #212121;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.reviews .review .review-items .review-item.review-item-body a.site-link {
+    font-size: 12px;
+}
+
+.reviews .review .review-items .review-item.review-item-get-bonus {
+    flex: 1;
+}
