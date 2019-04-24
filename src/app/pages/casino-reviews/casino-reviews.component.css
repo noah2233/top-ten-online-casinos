@@ -4,6 +4,8 @@
 
 .site-main .container {
     background-color: #fff;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 h1.page-title {
@@ -34,10 +36,6 @@ p.page-subtitle {
     padding: 10px 0;
 }
 
-/* .reviews .review .review-items .review-item {
-    flex: 3;
-} */
-
 .reviews .review .review-items .review-item.review-item-casino-site {
     flex: 1;
 }
@@ -49,8 +47,8 @@ p.page-subtitle {
     height: 100%;
 }
 
-.reviews .review .review-items .review-item.review-item-casino-site a:hover{
-  opacity: .8;
+.reviews .review .review-items .review-item.review-item-casino-site a:hover {
+    opacity: .8;
 }
 
 .reviews .review .review-items .review-item.review-item-body {
@@ -77,4 +75,52 @@ p.page-subtitle {
 
 .reviews .review .review-items .review-item.review-item-get-bonus {
     flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.reviews .review .review-items .review-item.review-item-get-bonus .get-bonus {
+    display: flex;
+    max-width: 155px;
+    height: 50px;
+    width: 100%;
+    background-color: #f09819;
+    background-color: #f09819;
+    border-radius: 3px;
+    background-image: -webkit-linear-gradient(top, #ffc71a 0%, #f09819 100%);
+    background-image: -o-linear-gradient(top, #ffc71a 0%, #f09819 100%);
+    background-image: linear-gradient(to bottom, #ffc71a 0%, #f09819 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFC71A", endColorstr="#FFF09819", GradientType=0);
+    box-shadow: 1.2px 2.7px 7.5px 0.5px rgba(0, 0, 0, 0.2);
+    color: #000;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: capitalize;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.reviews .review .review-items .review-item.review-item-get-bonus .get-bonus:hover {
+    background-image: -webkit-linear-gradient(top, #f8ef4f 0%, #f2ac45 100%);
+    background-image: -o-linear-gradient(top, #f8ef4f 0%, #f2ac45 100%);
+    background-image: linear-gradient(to bottom, #f8ef4f 0%, #f2ac45 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF8EF4F", endColorstr="#FFF2AC45", GradientType=0);
+    background-image: -webkit-linear-gradient(top, #f8ef4f 0%, #f2ac45 100%);
+    background-image: -o-linear-gradient(top, #f8ef4f 0%, #f2ac45 100%);
+    background-image: linear-gradient(to bottom, #f8ef4f 0%, #f2ac45 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFF8EF4F", endColorstr="#FFF2AC45", GradientType=0);
+    text-decoration: none;
+}
+
+.reviews .review .review-items .review-item.review-item-get-bonus .visit {
+    text-transform: capitalize;
+    color: #0288d1;
+    font-weight: 100;
+    font-size: 13px;
 }
