@@ -134,6 +134,8 @@ p.page-subtitle {
     font-size: 12px;
     color: #4a90e2;
     padding: 0;
+    margin-top: 15px;
+    line-height: 1;
 }
 
 .advertising-disclosure h3 {
@@ -178,5 +180,8 @@ p.page-subtitle {
     .reviews .review .review-items .review-item.review-item-body {
         flex: 1;
         padding: 10px;
+    }
+    .show-more-reviews button {
+        margin-top: 5px;
     }
 }
