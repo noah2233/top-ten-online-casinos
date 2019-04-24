@@ -14,7 +14,9 @@
                     </li>
                     <li class="review-item review-item-body">
                         <a href="javascript:void(0)" class="site-name">32Red Review</a>
-                        <p>
+                        <p ellipsis mwlResizable [ngStyle]="resizeStyle"
+                            [resizeEdges]="{bottom: true, right: true, top: true, left: true}"
+                            (resizeEnd)="onResizeEnd($event)" [enableGhostResize]="true">
                             32Red is an online casino powered by the renowned software provider, Microgaming. This
                             online casino has more than 500 games and a wide range of other great features. 32Red Casino
                             is dedicated to providing high quality customer service with highly trained customer agents

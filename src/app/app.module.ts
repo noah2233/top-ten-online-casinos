@@ -10,6 +10,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { EllipsisModule } from 'ngx-ellipsis';
+import { ResizableModule } from 'angular-resizable-element';
+
 // core
 
 // shared
@@ -55,7 +58,9 @@ import { LiveCasinoComponent } from './pages/live-casino/live-casino.component';
     TransferHttpCacheModule,
     HttpClientModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    EllipsisModule,
+    ResizableModule
   ],
   providers: [],
 })
