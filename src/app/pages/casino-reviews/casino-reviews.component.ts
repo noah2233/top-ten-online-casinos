@@ -8,8 +8,6 @@ import { ResizeEvent } from 'angular-resizable-element';
 })
 export class CasinoReviewsComponent implements OnInit {
   resizeStyle: any = {
-    left: `100px`,
-    top: `100px`,
     width: `100%`,
     height: `31px`
   };
