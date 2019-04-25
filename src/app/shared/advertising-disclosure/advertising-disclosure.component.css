@@ -67,12 +67,12 @@ button.title {
 
 /* media-queries */
 
-/* @media only screen and (max-width: 1199px) {
-    .advertising-disclosure-box.desktop {
-        left: initial;
-        right: 0;
+@media only screen and (max-width: 1199px) {
+    :host {
+        position: static;
+        margin: 10px 0;
     }
-} */
+}
 
 @media only screen and (max-width: 767px) {
     button.title {
