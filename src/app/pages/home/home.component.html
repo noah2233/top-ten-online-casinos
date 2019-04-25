@@ -17,9 +17,9 @@
             <div class="bonuses-updated">
                 <span class="title">bonuses updated:&nbsp;&nbsp;</span>
                 <span class="duration">
-                    <span class="hours">4 hours </span>
-                    <span class="and">and </span>
-                    <span class="minuts">2 minutes </span>
+                    <span *ngIf="bonusLastUpdate['hours'] > 0" class="hours">{{bonusLastUpdate['hours']}} hours&nbsp;</span>
+                    <span *ngIf="bonusLastUpdate['hours'] > 0" class="and">and&nbsp;</span>
+                    <span class="minuts">{{bonusLastUpdate['minutes']}} minutes&nbsp;</span>
                     <span>ago</span>
                 </span>
             </div>
