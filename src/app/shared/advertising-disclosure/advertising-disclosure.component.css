@@ -23,7 +23,7 @@ button.title {
     box-shadow: 0 5px 5px rgba(4, 5, 5, .27);
     width: 325px;
     top: 30px;
-    left: calc(-50% - 20px);
+    right: 0;
 }
 
 ::ng-deep .advertising-disclosure-box .title {
@@ -39,7 +39,6 @@ button.title {
     font-size: 13px;
     color: #3e3e3e;
     line-height: 1.5;
-    /* margin: 0; */
 }
 
 ::ng-deep .advertising-disclosure-box .got-it {
@@ -68,12 +67,12 @@ button.title {
 
 /* media-queries */
 
-@media only screen and (max-width: 1199px) {
-    :host {
-        position: static;
-        margin: 10px 0;
+/* @media only screen and (max-width: 1199px) {
+    .advertising-disclosure-box.desktop {
+        left: initial;
+        right: 0;
     }
-}
+} */
 
 @media only screen and (max-width: 767px) {
     button.title {
