@@ -75,15 +75,15 @@ export class CasinoReviewsComponent implements OnInit {
   ngOnInit() {
   }
 
-  onResizeEnd(event: ResizeEvent): void {
-    this.resizeStyle = {
-      position: 'fixed',
-      left: `${event.rectangle.left}px`,
-      top: `${event.rectangle.top}px`,
-      width: `${event.rectangle.width}px`,
-      height: `${event.rectangle.height}px`
-    };
-  }
+  // onResizeEnd(event: ResizeEvent): void {
+  //   this.resizeStyle = {
+  //     position: 'fixed',
+  //     left: `${event.rectangle.left}px`,
+  //     top: `${event.rectangle.top}px`,
+  //     width: `${event.rectangle.width}px`,
+  //     height: `${event.rectangle.height}px`
+  //   };
+  // }
 
   showMoreReviews() {
     this.isShowMoreRevies = true;
