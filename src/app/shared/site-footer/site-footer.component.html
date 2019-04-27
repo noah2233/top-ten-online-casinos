@@ -1,19 +1,21 @@
 <footer>
   <div class="container">
     <ul class="list-unstyled links">
-      <li class="link"><a>Top 10 Casinos</a><span class="separator">|</span></li>
-      <li class="link"><a>Reviews</a><span class="separator">|</span></li>
-      <li class="link"><a href="/articles">Articles</a><span class="separator">|</span></li>
-      <li class="link"><a href="/bonuses">Bonuses</a><span class="separator">|</span></li>
-      <li class="link"><a href="/slots">Slots</a><span class="separator">|</span></li>
-      <li class="link"><a href="/blackjack">Blackjack</a><span class="separator">|</span></li>
-      <li class="link"><a href="/roulette">Roulette</a><span class="separator">|</span></li>
-      <li class="link"><a href="/casino-compare">Feature Comparison</a><span class="separator">|</span></li>
-      <li class="link"><a href="/privacy">Privacy Policy</a><span class="separator">|</span></li>
-      <li class="link"><a href="/terms">Terms of Use</a><span class="separator">|</span></li>
-      <li class="link"><a href="/cookie">Cookie Policy</a><span class="separator">|</span></li>
-      <li class="link"><a href="/about">About Us</a><span class="separator">|</span></li>
-      <li class="link"><a href="/sitemap">Sitemap</a></li>
+      <li class="link"><a [routerLink]="'/'" href="javascript:void(0)">Top 10 Casinos</a><span
+          class="separator">|</span></li>
+      <li class="link"><a [routerLink]=" '/' + pages.casinoReviews" href="javascript:void(0)">Reviews</a><span
+          class="separator">|</span></li>
+      <li class="link"><a [routerLink]=" '/' + pages.articles" href="javascript:void(0)">Articles</a><span class="separator">|</span></li>
+      <li class="link"><a href="javascript:void(0)">Bonuses</a><span class="separator">|</span></li>
+      <li class="link"><a [routerLink]=" '/' + pages.slots" href="javascript:void(0)">Slots</a><span class="separator">|</span></li>
+      <li class="link"><a [routerLink]=" '/' + pages.blackjack" href="javascript:void(0)">Blackjack</a><span class="separator">|</span></li>
+      <li class="link"><a [routerLink]=" '/' + pages.roulette" href="javascript:void(0)">Roulette</a><span class="separator">|</span></li>
+      <li class="link"><a href="javascript:void(0)">Feature Comparison</a><span class="separator">|</span></li>
+      <li class="link"><a href="javascript:void(0)">Privacy Policy</a><span class="separator">|</span></li>
+      <li class="link"><a href="javascript:void(0)">Terms of Use</a><span class="separator">|</span></li>
+      <li class="link"><a href="javascript:void(0)">Cookie Policy</a><span class="separator">|</span></li>
+      <li class="link"><a [routerLink]=" '/' + pages.about" href="javascript:void(0)">About Us</a><span class="separator">|</span></li>
+      <li class="link"><a href="javascript:void(0)">Sitemap</a></li>
     </ul>
   </div>
 </footer>
